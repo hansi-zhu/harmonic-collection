@@ -1,0 +1,8 @@
+h1 {
+    color: rgb(222,219,214);
+    background-color: rgb(84,64,55);
+    border: 8px solid rgb(172,174,88);
+    font-family: Helvetica, sans-serif;
+    font-size: 74px;
+    text-align: center
+  }
