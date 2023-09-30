@@ -6,3 +6,10 @@ h1 {
     font-size: 74px;
     text-align: center
   }
+  h2 {
+    color: rgb(84,64,55);
+    background-color: rgb(222,219,214);
+    font-family: Helvetica, sans-serif;
+    font-size: 45px;
+    text-align: center
+}
