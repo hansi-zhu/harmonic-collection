@@ -1,26 +1,523 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>IMMORTALIZATING PLACE</title>
-        <link href="styles/entry-4.css"
-        rel="stylesheet">
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="back">
-        <h2><a href="entry-4.html">back</a></h2>
+<head>
+  <title>IMMORTALIZATING PLACE</title>
+  <link href="styles/testing-1.css"
+  rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "HN", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin:0;
+}
+.navbar {
+overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover {
+background: #ddd;
+color: black;
+}
+
+.sidenav {
+  height: 100%;
+  width: 270px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  rgb(222,219,214);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color:  rgb(222,219,214);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-top: 80px;
+  margin-left: 270px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+  <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </div>      
+
+<div class="sidenav">
+  <h3><a href="#about">Louis N. Jaffe Theater</a></h3>
+  <h3><a href="#services">McSorley's Old Ale House</a></h3>
+  <h3><a href="#clients">St Mark's Church-on-the-Bowery</a></h3>
+ <h3><a href="#contact">CBGB</a></h3> 
+ <h3><a href="#contact">St. George's Ukrainian Church</a></h3> 
+</div>
+
+<div class="main">
+ <div style="width: 1024px; height: 768px; position: relative; background: white">
+    <div style="width: 285.12px; height: 64.04px; left: 60px; top: 394.43px; position: absolute; background: #FF8577; border-radius: 8px"></div>
+    <div style="width: 285.12px; height: 64.04px; left: 60px; top: 314.39px; position: absolute; background: #F5911A; border-radius: 8px"></div>
+    <div style="width: 285.12px; height: 64.04px; left: 60px; top: 234.35px; position: absolute; background: #59C67E; border-radius: 8px"></div>
+    <div style="width: 249px; height: 31px; left: 78px; top: 254px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">McSorley’s Old Ale House</div>
+    <div style="width: 249px; height: 31px; left: 78px; top: 412px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Something else</div>
+    <div style="width: 285.12px; height: 64.04px; left: 60px; top: 154.31px; position: absolute; background: #755EFF; border-radius: 8px"></div>
+    <div style="width: 249px; height: 31px; left: 78px; top: 333px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">St. Mark’s Hotel</div>
+    <div style="left: 60px; top: 59.81px; position: absolute; color: #0521B7; font-size: 48px; font-family: Whyte Inktrap; font-weight: 500; line-height: 56px; word-wrap: break-word">Scroll to</div>
+    <div style="width: 560px; height: 640px; left: 420px; top: 64px; position: absolute">
+      <div style="width: 2576px; height: 1662px; left: -758px; top: -112px; position: absolute; background: #5551FF">
+        <div style="width: 2178.21px; height: 1145.49px; left: 241.55px; top: 303.53px; position: absolute">
+          <div style="width: 1043.02px; height: 803.87px; left: 730.16px; top: 25.30px; position: absolute; background: #FF8577"></div>
+          <div style="width: 1217.22px; height: 702.66px; left: 384.30px; top: 226.26px; position: absolute; background: #FF8577"></div>
+          <div style="width: 712.06px; height: 340.50px; left: 1308.23px; top: 418.26px; position: absolute; background: #FF8577"></div>
+          <div style="width: 1024.25px; height: 496.47px; left: 1153.96px; top: 619.21px; position: absolute; background: #FF8577"></div>
+          <div style="width: 1204.38px; height: 698.20px; left: 210.07px; top: 327.47px; position: absolute; background: #FF8577"></div>
+          <div style="width: 432.50px; height: 249.69px; left: 0px; top: 449.54px; position: absolute; background: #FF8577"></div>
+          <div style="width: 531.58px; height: 306.89px; left: 674.04px; top: 838.59px; position: absolute; background: #FF8577"></div>
+          <div style="width: 368.31px; height: 213.28px; left: 369.65px; top: 662.60px; position: absolute; background: #FF8577"></div>
+          <div style="width: 636.81px; height: 160.86px; left: 664.51px; top: 549.25px; position: absolute; background: #FF8577"></div>
+          <div style="width: 159.09px; height: 92.38px; left: 295.62px; top: 838.03px; position: absolute; background: #FF8577"></div>
+          <div style="width: 174.45px; height: 250.15px; left: 39.69px; top: 568.62px; position: absolute; background: #FF8577"></div>
+          <div style="width: 499.08px; height: 195.83px; left: 1223.37px; top: 246.35px; position: absolute; background: #FF8577"></div>
+          <div style="width: 452.12px; height: 87.89px; left: 514.98px; top: 994.33px; position: absolute; background: #FF8577"></div>
+          <div style="width: 310.23px; height: 180.19px; left: 980.27px; top: 0px; position: absolute; background: #FF8577"></div>
+        </div>
+        <div style="width: 2118.89px; height: 1154.45px; left: 321.92px; top: 198.87px; position: absolute">
+          <div style="width: 33.59px; height: 17.91px; left: 965.23px; top: 0px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 71.16px; height: 55.22px; left: 894.12px; top: 4.02px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 239.63px; height: 138.67px; left: 887.21px; top: 13.91px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 887.21px; top: 45.34px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 887.21px; top: 54.99px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.93px; left: 849.45px; top: 67.26px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 121.10px; height: 83.78px; left: 998.78px; top: 4.02px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1119.83px; top: 73.90px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1119.95px; top: 83.70px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 71.14px; height: 55.20px; left: 778.35px; top: 71.30px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 239.62px; height: 138.67px; left: 771.46px; top: 81.16px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.95px; height: 23.55px; left: 771.44px; top: 112.61px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 771.44px; top: 122.27px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 71.16px; height: 55.22px; left: 1048.83px; top: 93.33px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 121.10px; height: 83.77px; left: 894.22px; top: 64.78px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1015.27px; top: 134.65px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 239.63px; height: 138.67px; left: 887.25px; top: 0px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 121.10px; height: 83.78px; left: 883.01px; top: 71.28px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.59px; height: 17.92px; left: 1215.37px; top: 144.39px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1004.06px; top: 141.16px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1004.18px; top: 150.95px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 565.55px; top: 184.42px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 71.14px; height: 55.20px; left: 933.08px; top: 160.60px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 121.10px; height: 83.77px; left: 778.45px; top: 132.04px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 899.50px; top: 201.91px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 239.62px; height: 138.67px; left: 771.49px; top: 67.26px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 121.10px; height: 83.77px; left: 1248.92px; top: 148.42px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1369.97px; top: 218.29px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 360.53px; height: 208.92px; left: 1016.45px; top: 158.29px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1370.09px; top: 228.08px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1395.88px; top: 248.58px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 192.06px; height: 125.45px; left: 1023.36px; top: 148.42px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1016.45px; top: 259.97px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1016.45px; top: 269.62px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 174.38px; height: 115.19px; left: 391.21px; top: 188.45px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 384.30px; top: 289.74px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 641.71px; height: 418.95px; left: 384.32px; top: 198.32px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 384.30px; top: 299.39px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 121.10px; height: 83.77px; left: 1429.44px; top: 252.61px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1550.49px; top: 322.49px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 360.51px; height: 162.35px; left: 1196.99px; top: 262.47px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1550.61px; top: 332.26px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 192.06px; height: 125.45px; left: 1178.09px; top: 237.72px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 121.10px; height: 83.77px; left: 1023.47px; top: 279.40px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1144.51px; top: 349.28px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 360.53px; height: 208.92px; left: 1016.50px; top: 144.40px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 192.06px; height: 125.46px; left: 1203.86px; top: 252.60px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 253.67px; top: 365.62px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1196.97px; top: 364.16px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1196.97px; top: 373.81px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.23px; left: 208.34px; top: 369.65px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 107.33px; height: 76.24px; left: 1443.32px; top: 341.90px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1648.96px; top: 402.45px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 40.44px; height: 37.20px; left: 1203.98px; top: 383.60px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 16.13px; height: 17.91px; left: 1427.23px; top: 404.25px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 182.93px; height: 105.84px; left: 201.42px; top: 379.51px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 201.44px; top: 395.98px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 165.43px; height: 16.55px; left: 1261.83px; top: 408.27px; position: absolute; background: #A9A9A9"></div>
+          <div style="width: 360.51px; height: 162.35px; left: 1197.03px; top: 248.58px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 17.50px; height: 17.92px; left: 1244.36px; top: 406.91px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 390.25px; height: 239.14px; left: 599.11px; top: 188.45px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 201.44px; top: 405.63px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.78px; height: 21.58px; left: 989.31px; top: 413.68px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 90.15px; height: 65.91px; left: 287.24px; top: 369.65px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 45.38px; height: 40.23px; left: 1603.62px; top: 406.48px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 377.35px; top: 421.67px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 246.09px; height: 142.30px; left: 1596.73px; top: 416.36px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1596.73px; top: 432.82px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.55px; left: 377.45px; top: 431.44px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1596.73px; top: 442.46px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 407.11px; top: 454.19px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1551.12px; top: 459.29px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.23px; left: 332.13px; top: 441.10px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 90.17px; height: 65.91px; left: 208.44px; top: 415.42px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 298.55px; top: 467.44px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 182.93px; height: 105.84px; left: 201.47px; top: 365.62px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 68.25px; top: 473.35px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.23px; left: 361.78px; top: 458.22px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 45.37px; height: 40.24px; left: 1505.79px; top: 463.32px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 153.32px; height: 102.38px; left: 1682.52px; top: 406.48px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 182.93px; height: 105.84px; left: 354.86px; top: 468.08px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 354.88px; top: 484.55px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 246.09px; height: 142.31px; left: 1498.90px; top: 473.18px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1498.89px; top: 489.67px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1390.83px; top: 496.42px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1835.80px; top: 494.97px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 354.88px; top: 494.20px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1498.89px; top: 499.31px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 90.15px; height: 65.91px; left: 440.68px; top: 458.22px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1835.91px; top: 504.75px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 61.39px; height: 49.53px; left: 6.90px; top: 477.38px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 530.79px; top: 510.22px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 255.67px; height: 147.88px; left: 0px; top: 487.24px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 0.01px; top: 513.02px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.23px; left: 1345.51px; top: 500.45px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 6.93px; height: 23.55px; left: 530.89px; top: 520.01px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 29.77px; height: 126.94px; left: 996.05px; top: 421.37px; position: absolute; background: #8C8C8C"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 0.01px; top: 522.67px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 246.10px; height: 142.30px; left: 1338.60px; top: 510.31px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1338.60px; top: 526.78px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 0.31px; height: 15.98px; left: 1025.77px; top: 534.41px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.38px; height: 40.24px; left: 1790.59px; top: 514.40px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 153.34px; height: 102.39px; left: 1603.73px; top: 452.25px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1757.03px; top: 540.73px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 246.09px; height: 142.30px; left: 1596.76px; top: 402.47px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1338.62px; top: 536.43px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1019.15px; top: 536.50px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 560.54px; top: 542.75px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 153.32px; height: 102.38px; left: 1584.69px; top: 463.32px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 45.37px; height: 40.24px; left: 485.57px; top: 529.65px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 90.17px; height: 65.91px; left: 361.88px; top: 503.99px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1737.97px; top: 551.80px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1282.92px; top: 559.12px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 451.99px; top: 556px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 182.93px; height: 105.84px; left: 354.91px; top: 454.18px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 146.89px; height: 98.65px; left: 101.81px; top: 477.38px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.59px; height: 17.91px; left: 1945.16px; top: 565.63px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1738.10px; top: 561.59px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 248.65px; top: 562.14px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.24px; left: 515.22px; top: 546.77px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 6.93px; height: 23.55px; left: 248.77px; top: 571.91px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 182.91px; height: 105.83px; left: 508.31px; top: 556.65px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 508.31px; top: 573.12px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 153.32px; height: 102.38px; left: 1424.41px; top: 500.45px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 45.38px; height: 40.23px; left: 1237.58px; top: 563.15px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 508.31px; top: 582.77px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.23px; left: 1692.76px; top: 571.25px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 153.32px; height: 102.38px; left: 1505.91px; top: 509.10px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1577.69px; top: 588.93px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 246.10px; height: 142.30px; left: 1230.68px; top: 573.02px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1230.69px; top: 589.49px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1004.56px; top: 595.40px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 91.59px; height: 67.08px; left: 927.59px; top: 546.16px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 502.75px; height: 304.07px; left: 391.32px; top: 309.18px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 90.14px; height: 65.91px; left: 594.12px; top: 546.77px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 277.77px; top: 594.29px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1659.20px; top: 597.58px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 246.09px; height: 142.31px; left: 1498.93px; top: 459.29px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 641.72px; height: 418.93px; left: 384.35px; top: 184.43px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 894.03px; top: 599.34px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1577.80px; top: 598.72px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1230.70px; top: 599.13px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 684.22px; top: 598.79px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 684.33px; top: 608.58px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 61.38px; height: 49.53px; left: 187.42px; top: 581.57px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 146.90px; height: 98.65px; left: 7.01px; top: 532.45px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 38.32px; height: 36.14px; left: 966.28px; top: 599.43px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 255.65px; height: 147.88px; left: 0.04px; top: 473.35px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 33.59px; height: 17.91px; left: 153.87px; top: 617.21px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 155.24px; height: 89.85px; left: 959.37px; top: 609.28px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.55px; left: 959.38px; top: 621.68px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.93px; left: 708.19px; top: 627.97px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.23px; left: 1532.48px; top: 608.36px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 153.34px; height: 102.38px; left: 1345.62px; top: 546.22px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 61.38px; height: 49.53px; left: 216.43px; top: 598.32px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1498.90px; top: 634.70px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 246.10px; height: 142.30px; left: 1338.64px; top: 496.42px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 69.52px; height: 53.99px; left: 1038.12px; top: 599.43px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 959.36px; top: 631.33px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 133.15px; height: 90.73px; left: 1978.71px; top: 569.66px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 45.37px; height: 40.24px; left: 639px; top: 618.22px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 90.15px; height: 65.91px; left: 515.32px; top: 592.55px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 288.86px; height: 139.11px; left: 209.54px; top: 608.19px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 209.54px; top: 633.96px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1107.60px; top: 639.53px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 153.34px; height: 102.38px; left: 1316.48px; top: 563.15px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 182.91px; height: 105.83px; left: 508.36px; top: 542.76px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 605.43px; top: 644.56px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 347.45px; height: 149.80px; left: 1771.40px; top: 579.53px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 7.06px; height: 23.64px; left: 2111.81px; top: 646.49px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 209.54px; top: 643.61px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1107.71px; top: 649.32px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.23px; left: 662.86px; top: 632px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1469.77px; top: 651.63px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 166.91px; height: 110.84px; left: 1778.30px; top: 569.66px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 16.75px; height: 27px; left: 2102.14px; top: 656.22px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 187.57px; height: 82.80px; left: 655.95px; top: 641.87px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.95px; height: 23.55px; left: 655.95px; top: 658.32px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1469.89px; top: 661.42px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.95px; height: 23.55px; left: 1771.39px; top: 666.61px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 655.95px; top: 668px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 38.32px; height: 36.14px; left: 1069.44px; top: 658.98px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 69.52px; height: 54.01px; left: 966.38px; top: 641.11px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 1771.39px; top: 676.27px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1035.86px; top: 681.22px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 155.23px; height: 89.85px; left: 959.41px; top: 595.39px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 94.77px; height: 68.58px; left: 741.75px; top: 631.99px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 23px; height: 17.93px; left: 1703.94px; top: 686.56px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 49.63px; height: 21.59px; left: 1654.36px; top: 687.03px; position: absolute; background: #A2A2A2"></div>
+          <div style="width: 6.21px; height: 20.04px; left: 1726.89px; top: 690.60px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.38px; height: 40.23px; left: 1424.55px; top: 671.07px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 153.32px; height: 102.38px; left: 1237.71px; top: 608.92px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.09px; height: 23.58px; left: 836.47px; top: 686.68px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 246.08px; height: 142.30px; left: 1230.74px; top: 559.12px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1390.99px; top: 697.40px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 180.06px; height: 117.80px; left: 311.34px; top: 598.32px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 110.78px; height: 64.57px; left: 1636.87px; top: 700.46px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 17.56px; height: 27.09px; left: 1636.84px; top: 694.73px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 50.24px; height: 42.87px; left: 662.96px; top: 677.77px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 44px; height: 39.28px; left: 1778.40px; top: 686.04px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 0.88px; height: 17.53px; left: 1636.84px; top: 707.93px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 23.46px; height: 27.67px; left: 820.11px; top: 696.37px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1194.60px; top: 707.51px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 89.90px; height: 14.53px; left: 730.27px; top: 710.13px; position: absolute; background: #A9A9A9"></div>
+          <div style="width: 187.57px; height: 82.80px; left: 655.99px; top: 627.98px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 17.14px; height: 17.91px; left: 713.17px; top: 706.75px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 256.05px; height: 59.38px; left: 1846.12px; top: 669.35px; position: absolute; background: #A1A1A1"></div>
+          <div style="width: 7.08px; height: 23.59px; left: 491.36px; top: 702.23px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 347.45px; height: 149.80px; left: 1771.43px; top: 565.65px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 23.80px; height: 17.92px; left: 1822.36px; top: 711.41px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1547.20px; top: 716.95px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 13.80px; height: 43.27px; left: 1733.06px; top: 696.75px; position: absolute; background: #929292"></div>
+          <div style="width: 20.86px; height: 27.54px; left: 477.58px; top: 711.93px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 0.88px; height: 17.51px; left: 1746.81px; top: 726.13px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 131.67px; height: 89.88px; left: 216.54px; top: 653.40px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 109.80px; height: 21.61px; left: 367.82px; top: 725.59px; position: absolute; background: #A6A6A6"></div>
+          <div style="width: 288.86px; height: 139.09px; left: 209.58px; top: 594.29px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 19.69px; height: 17.91px; left: 348.17px; top: 729.38px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 46.97px; height: 41.17px; left: 1147.67px; top: 711.54px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 13.80px; height: 43.27px; left: 1637.68px; top: 711.57px; position: absolute; background: #929292"></div>
+          <div style="width: 36.26px; height: 34.94px; left: 1510.98px; top: 720.97px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 37.28px; height: 35.39px; left: 1580.76px; top: 720.98px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 17.56px; height: 27.09px; left: 1730.12px; top: 729.75px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 163.89px; height: 94.86px; left: 1140.76px; top: 721.42px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1140.76px; top: 738.81px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 49.62px; height: 21.59px; left: 1680.54px; top: 742.94px; position: absolute; background: #A2A2A2"></div>
+          <div style="width: 29.14px; height: 24.07px; left: 1651.44px; top: 740.94px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 110.78px; height: 64.57px; left: 1636.91px; top: 686.56px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 120.93px; height: 70.02px; left: 1504.07px; top: 730.84px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1504.09px; top: 742.01px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1618px; top: 742.48px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 69.51px; height: 54.01px; left: 1228.16px; top: 711.54px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1140.76px; top: 748.46px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1504.09px; top: 751.65px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1618.11px; top: 752.26px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1297.62px; top: 751.64px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 121.25px; top: 756.17px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1297.75px; top: 761.44px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 36.25px; height: 34.94px; left: 1581.91px; top: 761.91px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 37.28px; height: 35.40px; left: 1511.11px; top: 761.44px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 37.88px; height: 35.88px; left: 83.41px; top: 760.19px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 120.93px; height: 70.02px; left: 1504.12px; top: 716.95px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1548.35px; top: 782.95px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 20.53px; height: 17.92px; left: 987.38px; top: 789.74px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.61px; left: 76.52px; top: 782.18px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 66.40px; height: 19.94px; left: 921.03px; top: 789.91px; position: absolute; background: #A5A5A5"></div>
+          <div style="width: 60.87px; height: 49.01px; left: 154.81px; top: 760.19px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 46.97px; height: 41.17px; left: 1250.82px; top: 771.07px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 69.52px; height: 53.99px; left: 1147.77px; top: 758.24px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 163.89px; height: 94.86px; left: 1140.79px; top: 707.51px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1217.25px; top: 798.34px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.03px; height: 23.67px; left: 215.63px; top: 795.30px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 0.07px; height: 14.49px; left: 222.60px; top: 805.08px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 172.55px; height: 83.63px; left: 901.02px; top: 803.62px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 20.03px; height: 27.47px; left: 901.04px; top: 795.96px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.08px; height: 23.61px; left: 901.02px; top: 809.52px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1374.27px; top: 817.43px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 58.75px; height: 47.79px; left: 1007.86px; top: 793.76px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 1066.57px; top: 827.65px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 36.26px; height: 34.94px; left: 1338.05px; top: 821.44px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 37.30px; height: 35.40px; left: 1407.81px; top: 821.46px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 6.95px; height: 23.55px; left: 1066.67px; top: 837.42px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 120.93px; height: 70.02px; left: 1331.14px; top: 831.33px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1331.16px; top: 842.49px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1445.07px; top: 842.95px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1331.16px; top: 852.14px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1091.18px; top: 857.20px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1445.18px; top: 852.74px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 197.95px; height: 114.64px; left: 374.38px; top: 823.75px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 168.78px; height: 70.93px; left: 374.37px; top: 809.85px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 29.26px; height: 54.70px; left: 543.11px; top: 826.64px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 38.32px; height: 36.14px; left: 1028.39px; top: 847.08px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 86.80px; height: 63.98px; left: 908.07px; top: 819.24px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 994.83px; top: 869.33px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 172.55px; height: 83.63px; left: 901.05px; top: 789.73px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 40.08px; height: 25.03px; left: 736.79px; top: 862.98px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 36.25px; height: 34.93px; left: 1054.97px; top: 861.23px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 37.30px; height: 35.40px; left: 1124.74px; top: 861.22px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 36.25px; height: 34.94px; left: 1408.98px; top: 862.38px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 37.30px; height: 35.39px; left: 1338.16px; top: 861.93px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1375.40px; top: 883.42px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 120.93px; height: 70.02px; left: 1331.19px; top: 817.42px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 120.91px; height: 70.03px; left: 1048.08px; top: 871.08px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1048.08px; top: 882.25px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 1161.99px; top: 882.72px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 146.12px; height: 189.55px; left: 76.50px; top: 770.08px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 0.61px; height: 115.64px; left: 76.52px; top: 791.90px; position: absolute; background: #858585"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1048.08px; top: 891.90px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.95px; height: 23.55px; left: 1162.08px; top: 892.51px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.61px; left: 77.09px; top: 893.63px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 1194.97px; top: 917.12px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 8.72px; height: 127.55px; left: 213.91px; top: 805.67px; position: absolute; background: #808080"></div>
+          <div style="width: 36.25px; height: 34.93px; left: 1125.89px; top: 902.16px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 37.30px; height: 35.40px; left: 1055.09px; top: 901.69px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.59px; height: 17.92px; left: 1092.34px; top: 923.19px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 120.91px; height: 70.03px; left: 1048.12px; top: 857.19px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.92px; height: 22.96px; left: 207.02px; top: 919.33px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 198px; height: 71.51px; left: 374.38px; top: 866.88px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 197.95px; height: 114.63px; left: 374.42px; top: 809.85px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 19.66px; height: 73.63px; left: 717.17px; top: 874.11px; position: absolute; background: #808080"></div>
+          <div style="width: 0.45px; height: 16.44px; left: 716.75px; top: 933.83px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 38.32px; height: 36.14px; left: 1156.69px; top: 921.13px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 22.96px; height: 27.22px; left: 184.10px; top: 928.39px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 66.48px; height: 52.26px; left: 84.09px; top: 903.35px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 209.39px; height: 145.26px; left: 716.75px; top: 876.87px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 716.75px; top: 936.38px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 142.35px; height: 96.03px; left: 776.83px; top: 867.01px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 150.54px; top: 941.72px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 146.12px; height: 189.55px; left: 76.55px; top: 756.19px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 144.46px; height: 99.83px; left: 1149.79px; top: 931px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.55px; left: 1149.79px; top: 943.38px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 58.75px; height: 47.79px; left: 1228.53px; top: 921.13px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 919.14px; top: 949.15px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 1149.79px; top: 953.04px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1287.24px; top: 955.03px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 0.31px; height: 15.95px; left: 1293.97px; top: 964.81px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 919.25px; top: 958.93px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 33.59px; height: 17.92px; left: 940.25px; top: 985.96px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 10.27px; height: 52.33px; left: 1283.74px; top: 966.87px; position: absolute; background: #808080"></div>
+          <div style="width: 61.38px; height: 49.53px; left: 857.90px; top: 968.59px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 100.62px; height: 71.96px; left: 723.76px; top: 946.16px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 209.39px; height: 145.26px; left: 716.79px; top: 862.98px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 33.60px; height: 17.91px; left: 824.34px; top: 1004.23px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 86.81px; height: 63.98px; left: 1156.79px; top: 962.81px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 45.37px; height: 40.23px; left: 894.93px; top: 989.99px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 40.22px; height: 25.51px; left: 1243.55px; top: 1005.31px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 144.46px; height: 99.83px; left: 1149.83px; top: 917.11px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 267.37px; height: 154.59px; left: 888.01px; top: 999.86px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.93px; height: 23.55px; left: 888.02px; top: 1016.31px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 17.97px; height: 17.91px; left: 599.39px; top: 1023.15px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 196.26px; height: 19.30px; left: 403.17px; top: 1023.17px; position: absolute; background: #A8A8A8"></div>
+          <div style="width: 15.66px; height: 17.90px; left: 387.54px; top: 1028.58px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 888.01px; top: 1025.98px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 22.96px; height: 27.22px; left: 364.62px; top: 1032.59px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 327.43px; height: 84.58px; left: 357.73px; top: 1037.03px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 6.95px; height: 23.55px; left: 357.72px; top: 1045.90px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 60.87px; height: 49.01px; left: 617.34px; top: 1027.17px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 357.72px; top: 1055.57px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 7.05px; height: 23.67px; left: 678.16px; top: 1062.28px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.55px; left: 678.26px; top: 1072.06px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 174.62px; height: 114.66px; left: 973.80px; top: 989.99px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 7.05px; height: 23.68px; left: 1148.38px; top: 1090.74px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 37.88px; height: 35.88px; left: 640.42px; top: 1081.71px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 66.50px; height: 52.25px; left: 364.72px; top: 1065.34px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 16.79px; height: 17.91px; left: 623.67px; top: 1103.70px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 175.73px; height: 13.91px; left: 447.99px; top: 1107.72px; position: absolute; background: #A9A9A9"></div>
+          <div style="width: 327.43px; height: 84.58px; left: 357.77px; top: 1023.12px; position: absolute; background: #F1F1F1"></div>
+          <div style="width: 16.85px; height: 17.91px; left: 431.18px; top: 1103.70px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 6.93px; height: 23.54px; left: 1148.49px; top: 1100.53px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 45.37px; height: 40.24px; left: 1103.17px; top: 1110.18px; position: absolute; background: #8E8E8E"></div>
+          <div style="width: 174.61px; height: 114.66px; left: 895.03px; top: 1035.75px; position: absolute; background: #ABABAB"></div>
+          <div style="width: 33.60px; height: 17.92px; left: 1069.59px; top: 1136.53px; position: absolute; background: #9F9F9F"></div>
+          <div style="width: 267.37px; height: 154.59px; left: 888.06px; top: 985.96px; position: absolute; background: #F1F1F1"></div>
+        </div>
+        <div style="padding: 20px; left: 654.05px; top: 1087.02px; position: absolute; background: white; border-radius: 8px; border: 8px black solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+          <div style="color: black; font-size: 48px; font-family: Whyte Inktrap; font-weight: 500; line-height: 48px; word-wrap: break-word">Center Cir</div>
+        </div>
+        <div style="padding: 20px; left: 898.36px; top: 345.17px; position: absolute; background: white; border-radius: 8px; border: 8px black solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+          <div style="color: black; font-size: 48px; font-family: Whyte Inktrap; font-weight: 500; line-height: 48px; word-wrap: break-word">Louis N. Jaffe Theater</div>
+        </div>
+        <div style="padding: 20px; left: 1364.12px; top: 981.05px; position: absolute; background: white; border-radius: 8px; border: 8px black solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+          <div style="color: black; font-size: 48px; font-family: Whyte Inktrap; font-weight: 500; line-height: 48px; word-wrap: break-word">St. Mark's Church-on-the-Bowery</div>
+        </div>
+        <div style="padding: 20px; left: 1540.11px; top: 315.48px; position: absolute; background: white; border-radius: 8px; border: 8px black solid; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+          <div style="color: black; font-size: 48px; font-family: Whyte Inktrap; font-weight: 500; line-height: 48px; word-wrap: break-word">Service Area</div>
+        </div>
+        <div style="width: 65.14px; height: 124.73px; left: 759.98px; top: 939px; position: absolute">
+          <div style="width: 56.95px; height: 32.98px; left: 4.09px; top: 91.75px; position: absolute; background: rgba(39, 123, 201, 0.40)"></div>
+          <div style="width: 65.14px; height: 92.88px; left: 0px; top: 0px; position: absolute; background: #755EFF; border: 6px white solid"></div>
+          <div style="width: 21.65px; height: 21.64px; left: 21.74px; top: 19.31px; position: absolute; background: white; border-radius: 9999px"></div>
+        </div>
+        <div style="width: 65.14px; height: 124.73px; left: 997.58px; top: 463.90px; position: absolute">
+          <div style="width: 56.95px; height: 32.98px; left: 4.09px; top: 91.75px; position: absolute; background: rgba(39, 123, 201, 0.40)"></div>
+          <div style="width: 65.14px; height: 92.88px; left: 0px; top: 0px; position: absolute; background: #59C67E; border: 6px white solid"></div>
+          <div style="width: 21.65px; height: 21.64px; left: 21.74px; top: 19.31px; position: absolute; background: white; border-radius: 9999px"></div>
+        </div>
+        <div style="width: 65.14px; height: 124.73px; left: 1672.55px; top: 429.94px; position: absolute">
+          <div style="width: 56.95px; height: 32.98px; left: 4.09px; top: 91.75px; position: absolute; background: rgba(39, 123, 201, 0.40)"></div>
+          <div style="width: 65.14px; height: 92.88px; left: 0px; top: 0px; position: absolute; background: #FF8577; border: 6px white solid"></div>
+          <div style="width: 21.65px; height: 21.64px; left: 21.74px; top: 19.31px; position: absolute; background: white; border-radius: 9999px"></div>
+        </div>
+        <div style="width: 65.14px; height: 124.73px; left: 1506.64px; top: 837.93px; position: absolute">
+          <div style="width: 56.95px; height: 32.98px; left: 4.09px; top: 91.75px; position: absolute; background: rgba(39, 123, 201, 0.40)"></div>
+          <div style="width: 65.14px; height: 92.88px; left: 0px; top: 0px; position: absolute; background: #F5911A; border: 6px white solid"></div>
+          <div style="width: 21.65px; height: 21.64px; left: 21.74px; top: 19.31px; position: absolute; background: white; border-radius: 9999px"></div>
+        </div>
       </div>
-    <div class="header">
-      <h1>St. George's Ukrainian Catholic Church</h1>
-    </div>
-      <div class="next">
-        <h2><a href="entry-6.html">next</a></h2>
+      <div style="width: 560px; height: 640px; left: -14.06px; top: 19.99px; position: absolute; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+        <div style="width: 560px; height: 640px; border: 23px rgba(239.06, 0, 0, 0) solid"></div>
+      </div>
+      <div style="width: 560px; height: 640px; left: 663.15px; top: 16.77px; position: absolute; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+        <div style="width: 560px; height: 640px; border: 23px rgba(239.06, 0, 0, 0) solid"></div>
+      </div>
+      <div style="width: 560px; height: 640px; left: -245.45px; top: 621.13px; position: absolute; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+        <div style="width: 560px; height: 640px; border: 23px rgba(239.06, 0, 0, 0) solid"></div>
+      </div>
+      <div style="width: 560px; height: 640px; left: 502.11px; top: 518px; position: absolute; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+        <div style="width: 560px; height: 640px; border: 23px rgba(239.06, 0, 0, 0) solid"></div>
       </div>
     </div>
-    
-    <h3>30 E 7th St</h3>
-    <h3>est. 1840</h3>
-    <img src="img/5_st-georges.jpeg" alt="CBGB">
-    
-  </body>
-</html>
+    <div style="width: 249px; height: 31px; left: 78px; top: 174px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Helvetica Neue; font-weight: 500; word-wrap: break-word">Louis N. Jaffe Theater</div>
+  </div>
+ </div>
+   
+</body>
+</html> 
