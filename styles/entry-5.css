@@ -1,77 +1,110 @@
-
-h1 {
-    color: rgb(222,219,214);
-    background-color: rgb(84,64,55);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-    font-size: 50px;
-    text-align: center
-  }
-  h2 {
-    color: rgb(84,64,55);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-    font-size: 45px;
-    text-align: center
-}
-h3 {
-  color: rgb(84,64,55);
-  background-color: rgb(222,219,214);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-  font-size: 45px;
-  text-align: center
-}
-
-* { 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-img {
-  width: 100%;
-  height: auto;
-}
-
-.wrapper {
-  display: flex;
-  grid-template-columns: 1fr 7fr 1fr;
-  grid-column-gap: 3px;
-  justify-content: center;
-  align-items: center;
-}
-.back {
-    display: flex;
-    grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 1.5ch;
-    justify-content: left;
-    align-items: left;
-    padding: none;
-}
-.header {
-    display: flex;
-    grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 1.5ch;
-    justify-content: center;
-    align-items: center;
-    padding: none;
- }
-.next {
-    display: flex;
-    grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 1.5ch;
-    justify-content: right;
-    align-items: right;
-    padding: none;
-    }
-
 a:link {
-  color:rgb(84,64,55);
+  color:rgb(222,219,214);
   text-decoration: none;
 }
 a:visited {
-  color:rgb(84,64,55);
+  color:rgb(222,219,214);
 }
 a:hover {
-  color: rgb(49, 32, 26);
+  color: rgb(242,177,163);
 }
 a:active {
-  color: rgb(222,219,214);
+  color: rgb(222,219,214)
 }
+
+h1 {
+  color: rgb(222,219,214);
+  background-color: rgb(84,64,55);
+  border: 8px solid rgb(172,174,88);
+  font-family: Helvetica, sans-serif;
+  font-size: 74px;
+  text-align: center
+}
+
+h2 {
+  color: rgb(84,64,55);
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center
+}
+
+h3 {
+  color: rgb(222,219,214);
+  background-color: rgb(84,64,55);
+  border: 8px solid rgb(172,174,88);
+  font-family: Helvetica, sans-serif;
+  font-size: 36px;
+  text-align: center
+}
+p {
+  color: rgb(84,64,55);
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(222,219,214); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
