@@ -1,3 +1,45 @@
+a:link {
+  color:rgb(222,219,214);
+  text-decoration: none;
+}
+a:visited {
+  color:rgb(222,219,214);
+}
+a:hover {
+  color: rgb(242,177,163);
+}
+a:active {
+  color: rgb(222,219,214)
+}
+
+h1 {
+  color: rgb(222,219,214);
+  background-color: rgb(84,64,55);
+  border: 8px solid rgb(172,174,88);
+  font-family: Helvetica, sans-serif;
+  font-size: 74px;
+  text-align: center
+}
+
+h2 {
+  color: rgb(84,64,55);
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center
+}
+
+h3 {
+  color: rgb(222,219,214);
+  background-color: rgb(84,64,55);
+  border: 8px solid rgb(172,174,88);
+  font-family: Helvetica, sans-serif;
+  font-size: 36px;
+  text-align: center
+}
+p {
+  color: rgb(84,64,55);
+}
+
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -6,7 +48,7 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: rgb(222,219,214); 
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
