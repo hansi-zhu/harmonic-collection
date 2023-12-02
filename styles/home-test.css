@@ -1,0 +1,77 @@
+
+h1 {
+    color: rgb(222,219,214);
+    background-color: rgb(84,64,55);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 74px;
+    text-align: center
+  }
+  h2 {
+    color: rgb(84,64,55);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 45px;
+    text-align: center
+}
+h3 {
+  color: rgb(84,64,55);
+  background-color: rgb(222,219,214);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 30px;
+  text-align: center
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  display: flex;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-column-gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.back {
+    display: flex;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1.5ch;
+    justify-content: left;
+    align-items: left;
+    padding: none;
+}
+.header {
+    display: flex;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1.5ch;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+ }
+.next {
+    display: flex;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1.5ch;
+    justify-content: right;
+    align-items: right;
+    padding: none;
+    }
+
+a:link {
+  color:rgb(84,64,55);
+  text-decoration: none;
+}
+a:visited {
+  color:rgb(84,64,55);
+}
+a:hover {
+  color: rgb(49, 32, 26);
+}
+a:active {
+  color: rgb(222,219,214);
+}
