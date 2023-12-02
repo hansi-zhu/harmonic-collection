@@ -1,18 +1,87 @@
+
 <!DOCTYPE html>
 <html>
- <body style="background-color:rgb(242,177,163);">
-  <head>
-    <title>IMMORTALIZATING PLACE</title>
-    <link href="styles/styles.css"
-    rel="stylesheet">
-  </head>
-  <body>
-    <object data="svg/east-village.svg" width="100%" height="100%"> </object>
-    <h1>IMMORTALIZING PLACE</h1>
-    <h3><a href="entry-1.html">Louis N. Jaffe Theater</a></h3>
-    <h3><a href="entry-2.html">McSorley's Old Ale House</a></h3>
-    <h3><a href="entry-3.html">St. Mark's Hotel</a></h3>
-    <h3><a href="entry-4.html">CBGB's & OMFUG</a></h3>
-    <h3><a href="entry-5.html">St. George's Ukrainian Catholic Church</a></h3>
-  </body>
-</html>
+<head>
+  <title>IMMORTALIZATING PLACE</title>
+  <link href="styles/index.css"
+  rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+background-color:rgb(242,177,163);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin:0;
+}
+.navbar {
+overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover {
+background: #ddd;
+color: black;
+}
+
+.sidenav {
+  height: 100%;
+  width: 270px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  rgb(222,219,214);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color:  rgb(222,219,214);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-top: 80px;
+  margin-left: 270px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>   
+
+<div class="sidenav">
+  <h3><a href="entry-1.html">Louis N. Jaffe Theater</a></h3>
+  <h3><a href="entry-2.html">McSorley's Old Ale House</a></h3>
+  <h3><a href="entry-3.html">St Mark's Church-on-the-Bowery</a></h3>
+ <h3><a href="entry-4.html">CBGB</a></h3> 
+ <h3><a href="#entry-5.html">St. George's Ukrainian Church</a></h3> 
+</div>
+
+<div class="main">
+ <div style="position: relative; ">
+    <object data="svg/east-village-alt.svg" width="200%" height="200%"> </object>
