@@ -13,13 +13,13 @@ h1 {
     text-align: center
 }
 h3 {
-  color: rgb(84,64,55);
-  background-color: rgb(222,219,214);
+  color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
   text-align: center;
   line-height: 98%;
 }
+
 
 .cls-1 {
   fill: #0040ff;
@@ -40,6 +40,10 @@ h3 {
   color: rgb(226,207,234)
 }
 
+.grid-item:hover{
+  color:aqua;
+}
+
 * { 
   margin: 0;
   padding: 0;
@@ -52,16 +56,17 @@ img {
 
 /* The sidebar menu */
 .sidenav-left {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  height: auto; /* Full-height: remove this if you want "auto" height */
   width: 10%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: 0;
+  left: 10px;
   background-color: rgb(222,219,214); 
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0px;
   padding-bottom: 0px;
+  animation: dropdown-1 1.5s ease-out;
 }
 
 /* The navigation menu links */
@@ -71,6 +76,83 @@ img {
   font-size: 25px;
   color: #e2cfea;
   display: grid;
+}
+
+@keyframes dropdown-1
+{
+0%   {left:10px; top:-700px; }
+100% {left:10px; top:0px;}
+}
+
+#one {
+  background-color:#b7c9e2;
+}
+#one:hover{
+  background-color:rgb(208,247,128);
+}
+
+#two {
+  background-color:antiquewhite;
+}
+#two:hover{
+  background-color:rgb(208,247,128);
+}
+
+#three {
+  background-color:#8ABD91
+  ;
+}
+#three:hover{
+  background-color:rgb(208,247,128);
+}
+
+#four {
+  background-color:aliceblue;
+}
+#four:hover{
+  background-color:rgb(208,247,128);
+}
+
+#five {
+  background-color:rgb(222,219,214);
+}
+#five:hover{
+  background-color:rgb(208,247,128);
+}
+
+#six {
+  background-color:bisque;
+}
+#six:hover{
+  background-color:rgb(208,247,128);
+}
+
+#seven {
+  background-color:bisque;
+}
+#seven:hover{
+  background-color:rgb(208,247,128);
+}
+
+#eight {
+  background-color:bisque;
+}
+#eight:hover{
+  background-color:rgb(208,247,128);
+}
+
+#nine {
+  background-color:bisque;
+}
+#nine:hover{
+  background-color:rgb(208,247,128);
+}
+
+#ten {
+  background-color:bisque;
+}
+#ten:hover{
+  background-color:rgb(208,247,128);
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -87,16 +169,22 @@ img {
 
 /* The sidebar menu */
 .sidenav-right {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 15%; /* Set the width of the sidebar */
+  height: auto; /* Full-height: remove this if you want "auto" height */
+  width: 10%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  right: 0;
+  right: 10px;
   background-color: rgb(222,219,214); 
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0px;
   padding-bottom: 0px;
+  animation: dropdown-2 1.5s ease-out;
+}
+@keyframes dropdown-2
+{
+0%   {right:10px; top:-700px; }
+100% {right:10px; top:0px;}
 }
 
 /* The navigation menu links */
@@ -114,6 +202,7 @@ img {
   padding: 0px 0px;
   top: 0;
   left: 0;
+  height:100%;
 }
 
 .wrapper {
