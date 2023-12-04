@@ -92,29 +92,28 @@ img {
 }
 
 #two {
-  background-color:antiquewhite;
+  background-color:#f8d568;
 }
 #two:hover{
   background-color:rgb(208,247,128);
 }
 
 #three {
-  background-color:#8ABD91
-  ;
+  background-color:#9ee09e ;
 }
 #three:hover{
   background-color:rgb(208,247,128);
 }
 
 #four {
-  background-color:aliceblue;
+  background-color:#eccaff;
 }
 #four:hover{
   background-color:rgb(208,247,128);
 }
 
 #five {
-  background-color:rgb(222,219,214);
+  background-color:#feb144;
 }
 #five:hover{
   background-color:rgb(208,247,128);

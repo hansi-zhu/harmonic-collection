@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="houses" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309.7 192.59">
+  <defs>
+    <style>
+      .cls-1c {
+        fill: none;
+        stroke: #634d40;
+      }
+
+      .cls-1c, .cls-2c, .cls-3c {
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2c {
+        stroke: #f2e0bf;
+      }
+
+      .cls-2c, .cls-3c, .cls-4c {
+        fill: #6ccd9e;
+      }
+
+      .cls-3c {
+        stroke: #6ccd9e;
+      }
+
+      .cls-5c {
+        fill: #f2e0bf;
+      }
+
+      .cls-5c, .cls-6c, .cls-4c, .cls-7c, .cls-8c, .cls-9c, .cls-10c {
+        stroke-width: 0px;
+      }
+
+      .cls-6c {
+        fill: #634d40;
+      }
+
+      .cls-7c {
+        fill: #163c8b;
+      }
+
+      .cls-8c {
+        fill: #c2b5a8;
+      }
+
+      .cls-9c {
+        fill: #b78951;
+      }
+
+      .cls-10c {
+        fill: #f2d2ab;
+      }
+    </style>
+  </defs>
+  <rect class="cls-8c" x="122.59" y="46.3" width="63.89" height="31.38"/>
+  <rect class="cls-5c" x="101.66" y="80.35" width="108.01" height="114.05"/>
+  <ellipse class="cls-5c" cx="155.61" cy="91.17" rx="39.78" ry="33.82"/>
+  <circle class="cls-10c" cx="89.32" cy="124.99" r="12.29"/>
+  <rect class="cls-10c" x="77.08" y="123.19" width="24.52" height="69.41"/>
+  <circle class="cls-10c" cx="221.9" cy="124.99" r="12.29"/>
+  <rect class="cls-10c" x="209.67" y="123.19" width="24.52" height="69.41"/>
+  <circle class="cls-7c" cx="122.59" cy="97.88" r="7.91"/>
+  <rect class="cls-7c" x="114.72" y="96.72" width="15.78" height="26.47"/>
+  <circle class="cls-9c" cx="122.59" cy="123.39" r="7.91"/>
+  <rect class="cls-9c" x="114.72" y="123.73" width="15.78" height="15.78"/>
+  <circle class="cls-7c" cx="186.45" cy="98.07" r="7.91"/>
+  <rect class="cls-7c" x="178.57" y="96.92" width="15.78" height="26.47"/>
+  <circle class="cls-7c" cx="154.84" cy="85.2" r="14.98"/>
+  <rect class="cls-7c" x="139.92" y="85.2" width="29.9" height="54.1"/>
+  <circle class="cls-9c" cx="154.84" cy="117.28" r="14.98"/>
+  <rect class="cls-9c" x="139.96" y="115.48" width="29.9" height="23.82"/>
+  <circle class="cls-9c" cx="186.47" cy="123.39" r="7.91"/>
+  <rect class="cls-9c" x="178.59" y="123.39" width="15.78" height="16.12"/>
+  <rect class="cls-6c" x="139.96" y="153.12" width="29.87" height="39.49"/>
+  <rect class="cls-6c" x="178.59" y="153.12" width="15.78" height="39.49"/>
+  <rect class="cls-6c" x="114.72" y="153.12" width="15.78" height="39.49"/>
+  <path class="cls-1c" d="m101.66,80.35h14.46c8.06-14.19,23.17-22.99,39.49-22.99,16.32,0,31.43,8.8,39.49,22.99h14.57"/>
+  <path class="cls-1c" d="m77.08,123.19c1.79-7.1,8.49-11.4,14.65-10.26,4.8.89,8.75,4.97,9.87,10.26"/>
+  <path class="cls-1c" d="m209.67,123.19c1.79-7.1,8.49-11.4,14.65-10.26,4.8.89,8.75,4.97,9.87,10.26"/>
+  <rect class="cls-5c" x="146.87" y="48.29" width="15.94" height="18.12"/>
+  <path class="cls-4c" d="m122.61,46.3c4.73-15.17,19.11-25.08,34.27-24.02,13.58.95,25.43,10.52,29.56,24.02"/>
+  <line class="cls-3c" x1="154.6" y1="22.28" x2="154.6" y2="17.02"/>
+  <line class="cls-2c" x1="154.91" y1="48.61" x2="154.91" y2="43.69"/>
+</svg>
