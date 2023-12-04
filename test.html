@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <body style="background-color:#b7c9e2;"></body>
     <head>
         <title>IMMORTALIZATING PLACE</title>
         <link href="styles/test.css"
         rel="stylesheet">
         <style>
             body {
-                background-image: url("img/1_louisnjaffe.jpeg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -26,11 +24,21 @@
                 left: 0;
                 height:100%;
             }
+            #theme:hover{
+            cursor: pointer; 
+            }
         </style>
   </head>
   <body>
-    
-    <div class="content" position="relative" background-image="img/1_louisnjaffe.jpeg">
-    </div>
-    
+    <div onclick="settheme(theme)">
+        <div id="theme">
+            click
+        </div>
+    </div>   
+    <script src="js/test.js"></script>
+
+
+</body>
+</html>
+
   </body>

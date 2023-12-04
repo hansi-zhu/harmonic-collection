@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
+
+ body {
+    background-color: black;
+}
+
+  .top {
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #b7c9e2;
+    opacity: 0;
+    animation: fadeOut 3s;
+     -webkit-animation: fadeOut 3s;
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    60% {opacity: 1;}
+    100% { opacity: 0; }
+  }
+
+  .content{
+    margin-top: 0px;
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    height:100%;
+    opacity: 1;
+    background-image:image("img/1_louisnjaffe.jpeg");
+  }
+
+  #theme{
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 70px;
+    background-color: blue;
+    text-align: center;
+  }
+
+h1 {
+    color: rgb(222,219,214);
+    background-color: rgb(84,64,55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 74px;
+    text-align: center
+  }
+
+
+h2 {
+    color: rgb(84,64,55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center
+  }

@@ -4,7 +4,7 @@
  }
 
  body {
-    background-image: ("/img/1_louisnjaffe.jpeg");
+    background-image: url("/img/1_louisnjaffe.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -23,7 +23,8 @@
 
   .home-container {
     z-index:1;
-    margin-left: 0px; /* Same as the width of the sidebar */
+    margin-left: 10px; /* Same as the width of the sidebar */
+    margin-top: 10px;
     padding: 0px 0px;
     top: 0;
     left: 0;
@@ -32,8 +33,18 @@
     bottom: 0;
     grid-template-columns: 1;
     grid-template-rows: 1;
+    border: 2px solid black;
+    border-radius:25px;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(242,177,163);
   }
 
+  .home.container:a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+  }
 
   .content{
     margin-top: 0px;

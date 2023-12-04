@@ -7,10 +7,11 @@ h1 {
     text-align: center
   }
   h2 {
-    color: rgb(84,64,55);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-    font-size: 45px;
-    text-align: center
+    color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  line-height: 98%;
 }
 h3 {
   color: black;
@@ -26,17 +27,43 @@ h3 {
   grid-template-columns: auto;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   padding: 0px;
-  border: 3px solid rgba(0, 0, 0, 0.8);
-
 }
 .grid-item {
   border: 3px solid rgba(0, 0, 0, 0.8);
   padding: 0px;
   text-align: center;
+  border-radius: 25px;
 }
 
 .grid-item:hover{
-  color:aqua;
+  border: 3px solid white;
+}
+
+.welcome{
+  display:grid;
+  height: auto; /* Full-height: remove this if you want "auto" height */
+  width: 30%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 13%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  animation: dropdown-3 1.5s ease-out;
+  align-items: center;
+  grid-template-columns: none;
+}
+@keyframes dropdown-3
+{
+0%   {right:13%; top:-700px; }
+100% {right:13%; top:0px;}
+}
+#welcome{
+  background-color: white;
+}
+#welcome:hover{
+  border-color:black;
 }
 
 * { 
@@ -193,6 +220,7 @@ img {
   padding: 0px 0px;
   top: 0;
   left: 0;
+  bottom:0;
   height:100%;
 }
 

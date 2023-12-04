@@ -3,8 +3,9 @@
     padding: 0px;
  }
 
+
  body {
-    background-image: ("/img/1_louisnjaffe.jpeg");
+    background-color:antiquewhite;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -38,6 +39,15 @@
     opacity: 1;
     background-image:image("img/1_louisnjaffe.jpeg");
   }
+
+  #theme{
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 70px;
+    background-color: blue;
+    text-align: center;
+  }
+
 h1 {
     color: rgb(222,219,214);
     background-color: rgb(84,64,55);
@@ -53,3 +63,6 @@ h2 {
     font-size: 36px;
     text-align: center
   }
+
+
+  
