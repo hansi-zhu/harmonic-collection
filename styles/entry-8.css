@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ body {
+    background-image: url("/img/8_pyramid.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+  .top {
+    z-index:2;
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #b7c9e2;
+  
+  }
+
+  .home-container {
+    z-index:1;
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    right:0;
+    position:absolute;
+    bottom: 0;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+  }
+
+
+  .content{
+    margin-top: 0px;
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    height:100%;
+    opacity: 1;
+  }
+
+  
+h1 {
+    color: rgb(222,219,214);
+    background-color: rgb(84,64,55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 74px;
+    text-align: center
+  }
+
+
+h2 {
+    color: rgb(84,64,55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center
+  }
+
+h3 {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+    text-align: center;
+}
