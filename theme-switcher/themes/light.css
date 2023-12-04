@@ -14,5 +14,5 @@ header {
 }
 
 .box img {
-  border: 2px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
 }

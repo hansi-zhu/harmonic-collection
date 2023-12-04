@@ -1,5 +1,5 @@
 :root {
-  --back-color: #4464ad;
+  --back-color: rgb(54, 54, 137);
   --primary-color: #f9ffee;
 
   --header-text: #eee;
@@ -15,5 +15,5 @@ header {
 }
 
 .box img {
-  border: 2px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
 }

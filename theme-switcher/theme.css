@@ -15,26 +15,20 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  text-align: center;
-  font-size: 30px;
-  padding: 0 0;
-}
-
 .theme-switches {
   display: grid;
   justify-content: right;
-  margin-right:15%;
+  margin-right:10%;
   align-items: center;
   grid-template-columns: auto;
 }
 
 .switch {
   border: 3px solid black;
-  border-radius: 16px;
-  height: 60px;
-  width: 60px;
-  margin: 4px;
+  border-radius: 12px;
+  height: 40px;
+  width: 40px;
+  margin: 0px;
   cursor: pointer;
   align-content: center;
   justify-content: center;

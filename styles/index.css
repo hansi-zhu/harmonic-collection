@@ -52,7 +52,7 @@ h3 {
   padding-bottom: 0px;
   animation: dropdown-3 1.5s ease-out;
   align-items: center;
-  grid-template-columns: none;
+  align-content:center;
 }
 @keyframes dropdown-3
 {
@@ -61,6 +61,7 @@ h3 {
 }
 #welcome{
   background-color: white;
+  padding: 1%;
 }
 #welcome:hover{
   border-color:black;
