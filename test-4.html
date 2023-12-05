@@ -3,122 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Counter</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0; /* Background color */
-        }
-
-        .beer-glass-container {
-            display: flex;
-            justify-content: space-between;
-            width: 80%; /* Adjust the width of the container */
-        }
-
-        .beer-glass {
-            position: relative;
-            width: 20%; /* Adjust based on the number of glasses you want in a row */
-            max-width: 120px; /* Set a maximum width for larger screens */
-            height: auto;
-            margin: 20px; /* Adjust the spacing between glasses */
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .beer-glass:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); /* Adjust the overlay color and transparency */
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            font-size: 20px;
+            font-family: Arial, sans-serif;
             text-align: center;
-            pointer-events: none; /* Allow clicks to pass through the overlay */
-            border-radius: 10% 10% 50% 50% / 100% 100% 0 0; /* Match the beer glass shape */
+            margin: 50px;
         }
 
-        .beer-glass:hover:before {
-            opacity: 1;
+        #money-display {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
-        .beer-glass img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10% 10% 50% 50% / 100% 100% 0 0;
-            display: block;
+        .subtract-button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
         }
-        .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  opacity:.7;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
 
-.container:hover .overlay {
-  height: 100%;
-}
+        .subtract-button[disabled] {
+            background-color: #808080; /* Dark gray for disabled buttons */
+            cursor: not-allowed;
+        }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  }
-
-  .grid{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+        #out-of-funds {
+            display: none;
+            font-size: 18px;
+            color: red;
+        }
     </style>
 </head>
 <body>
-    <div class="grid">
-    <div class="beer-glass-container">
-        <div class="beer-glass">
-            <img src="img/1_maurice-1.jpeg" alt="Beer Glass">
-            <div class="overlay">
-                <div class="text">Text 3</div>
-        </div>
-        <div class="beer-glass">
-            <img src="img/1_maurice-1.jpeg" alt="Beer Glass">
-            <div class="overlay">
-                <div class="text">Text 3</div>
-        </div>
-        <div class="beer-glass">
-            <img src="img/1_maurice-1.jpeg" alt="Beer Glass">
-            <div class="overlay">
-                <div class="text">Text 3</div>
-        </div>
-        <div class="beer-glass">
-            <img src="img/1_maurice-1.jpeg" alt="Beer Glass">
-            <div class="overlay">
-                <div class="text">Text 3</div>
-        </div>
-    </div>
-    <div class="grid">
+
+    <h1>Money Counter</h1>
+
+    <div id="money-display">$10</div>
+
+    <button class="subtract-button" data-amount="1">Subtract $1</button>
+    <button class="subtract-button" data-amount="2">Subtract $2</button>
+    <button class="subtract-button" data-amount="5">Subtract $5</button>
+    <button class="subtract-button" data-amount="10">Subtract $10</button>
+    
+    <div id="out-of-funds">Out of funds!</div>
+
+    <script>
+        // Initial money value
+        let money = 10;
+
+        // Function to update the money display
+        function updateMoneyDisplay() {
+            document.getElementById('money-display').textContent = `$${money}`;
+        }
+
+        // Function to handle button click
+        function handleButtonClick(event) {
+            const amount = parseInt(event.target.dataset.amount, 10);
+
+            if (money >= amount) {
+                // Subtract specified amount from the money value
+                money -= amount;
+
+                // Update the money display
+                updateMoneyDisplay();
+            }
+
+            // Check if out of funds
+            if (money <= 0) {
+                document.querySelectorAll('.subtract-button').forEach(button => {
+                    button.disabled = true;
+                });
+                document.getElementById('out-of-funds').style.display = 'block';
+            }
+        }
+
+        // Event listeners for all subtract buttons
+        document.querySelectorAll('.subtract-button').forEach(button => {
+            button.addEventListener('click', handleButtonClick);
+        });
+
+        // Initial update of the money display
+        updateMoneyDisplay();
+    </script>
+
 </body>
 </html>

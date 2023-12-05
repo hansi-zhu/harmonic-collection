@@ -274,7 +274,7 @@ a:active {
 }
 
 :root {
-  --back-color: #ffc5c5;
+  --back-color: rgb(242,177,163);
   --primary-color: #000000;
 }
 body {

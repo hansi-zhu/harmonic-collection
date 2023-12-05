@@ -1,0 +1,165 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+#money-display {
+    font-size: 70px;
+    margin-bottom: 20px;
+    border: 6px black solid;
+    border-radius:16px;
+    width: 20vw;
+    margin: auto;
+    background-color: white;
+}
+
+.candy {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 3px solid #333;
+    border-radius: 16px;
+    transition: background-color 0.3s;
+    background-color: white;
+    width: 15vw;
+    height:20vw;
+}
+
+.candy:hover {
+    background-color: rgb(208,247,128);
+    border: 3px solid white;
+}
+
+.candy img{
+    object-fit: cover;
+}
+
+#candy-store {
+    margin-top: 20px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ body {
+    background-image: url("/img/1_louisnjaffe.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+  .top {
+    z-index:2;
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #b7c9e2;
+  
+  }
+
+  .home-container {
+    z-index:1;
+    margin-left: 10px; /* Same as the width of the sidebar */
+    margin-top: 10px;
+    padding: 0px 0px;
+    top: 12px;
+    left: 0;
+    right:0;
+    position:absolute;
+    bottom: 0;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    border: 2px solid black;
+    border-radius:25px;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(242,177,163);
+    position: sticky;
+  }
+
+  .home.container:a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .content{
+    margin-top: 0px;
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    height:100%;
+    opacity: 1;
+  }
+
+  .intro{
+      display:grid;
+      height: auto; /* Full-height: remove this if you want "auto" height */
+      width: 30%; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: 1; /* Stay on top */
+      bottom: 0; /* Stay at the top */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 0px;
+      padding-bottom: 0px;
+      align-items: center;
+      align-content:center;
+      justify-content:center;
+    }
+
+    #intro{
+      background-color: white;
+      border: 3px solid black;
+      border-radius:25px;
+      padding: 1%;
+      fill-opacity:0.5;
+    }
+    #intro:hover{
+      border-color:black;
+    }
+
+.action{
+    border: solid 3px black;
+    border-radius: 16px;
+    background-color: white;
+    width: 55ch;
+    margin:auto;
+    }
+
+  
+h1 {
+    color: rgb(222,219,214);
+    background-color: rgb(84,64,55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 74px;
+    text-align: center
+  }
+
+
+h2 {
+    color: rgb(84,64,55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center
+  }
+
+h3 {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center
+  }

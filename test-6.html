@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layered Hamburger</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        #hamburger {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #e07a5f; /* Bread color */
+            margin: 50px auto;
+        }
+
+        .layer {
+            position: absolute;
+            width: 80px;
+            height: 20px;
+            background-color: #3d405b; /* Layer color */
+            left: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        #layer-1 {
+            top: 10px;
+        }
+
+        #layer-2 {
+            top: 30px;
+            transform: translateY(0);
+        }
+
+        #layer-3 {
+            top: 50px;
+            transform: translateY(0);
+        }
+
+        #layer-4 {
+            top: 70px;
+            transform: translateY(0);
+        }
+
+        #button {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: #3d405b;
+            color: #f4f1de;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hamburger">
+        <div id="layer-1" class="layer"></div>
+        <div id="layer-2" class="layer"></div>
+        <div id="layer-3" class="layer"></div>
+        <div id="layer-4" class="layer"></div>
+    </div>
+
+    <button id="button" onclick="addLayer()">Add Layer</button>
+
+    <script>
+        let currentLayer = 1;
+
+        function addLayer() {
+            if (currentLayer < 4) {
+                currentLayer++;
+                document.getElementById(`layer-${currentLayer}`).style.transform = 'translateY(0)';
+            }
+        }
+    </script>
+
+</body>
+</html>

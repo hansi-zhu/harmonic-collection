@@ -48,6 +48,10 @@ body {
   background-color: rgb(242,177,163);
   position: sticky;
 }
+.home-container:hover{
+  border: 2px solid white;
+  background-color:rgb(208,247,128);
+}
 
 .home.container:a{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
