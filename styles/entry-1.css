@@ -56,6 +56,31 @@
     opacity: 1;
   }
 
+  .intro{
+      display:grid;
+      height: auto; /* Full-height: remove this if you want "auto" height */
+      width: 30%; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: 1; /* Stay on top */
+      bottom: 0; /* Stay at the top */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 0px;
+      padding-bottom: 0px;
+      align-items: center;
+      align-content:center;
+      justify-content:center;
+    }
+
+    #intro{
+      background-color: white;
+      border: 3px solid black;
+      border-radius:25px;
+      padding: 1%;
+      fill-opacity:0.5;
+    }
+    #intro:hover{
+      border-color:black;
+    }
   
 h1 {
     color: rgb(222,219,214);
@@ -78,4 +103,41 @@ h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:14px;
     text-align: center;
+}
+
+/* Setting container to flex and width to 80% of view port */
+.container{ 
+	display: flex; 
+	width: 30%;
+  margin:auto;
+} 
+/*Adding background image to each section*/
+.one{ 
+	background: url(../img/1_phoenix-1.jpeg); 
+} 
+.two{ 
+	background: url(../img/1_phoenix-2.jpeg); 
+} 
+.three{ 
+	background: url(../img/1_phoenix-3.jpeg); 
+} 
+.four{ 
+	background: url(../img/1_phoenix-4.jpeg); 
+} 
+/* Background properties and transition effect to section */
+.section{ 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	height: 50vh; 
+	cursor: pointer; 
+	flex: 0.2; 
+	margin:8px; 
+	position: relative; 
+	transition: all 0.7s ease-out; 
+} 
+
+/* section with active class will grow flex to 3 times */
+.section.active{ 
+	flex: 3; 
 }

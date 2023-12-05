@@ -1,10 +1,142 @@
-html, body, * { 
-    margin: 0; 
-    padding: 0; 
-}
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: none;
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ body{ 
+	background-color: #b7c9e2; 
+	color: black; 
+    margin-top: 0.5%;
+} 
+
+  .top {
+    z-index:2;
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #b7c9e2;
+  }
+  .top:hover{
+    cursor: pointer;
+  }
+
+  .home-container {
+    z-index:1;
+    margin-left: 10px; /* Same as the width of the sidebar */
+    margin-top: 10px;
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    right:0;
+    position:absolute;
+    bottom: 0;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    border: 2px solid black;
+    border-radius:25px;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(242,177,163);
+  }
+
+  .home.container:a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .content{
+    margin-top: 0px;
+    margin-left: 0px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    top: 0;
+    left: 0;
+    height:100%;
+    opacity: 1;
+    z-index:0;
+  }
+
+  .intro{
+      display:grid;
+      height: auto; /* Full-height: remove this if you want "auto" height */
+      width: 30%; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: 1; /* Stay on top */
+      bottom: 0; /* Stay at the top */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 0px;
+      padding-bottom: 0px;
+      align-items: center;
+      align-content:center;
+      justify-content:center;
     }
+
+    #intro{
+      background-color: white;
+      border: 3px solid black;
+      border-radius:25px;
+      padding: 1%;
+      fill-opacity:0.5;
+    }
+    #intro:hover{
+      border-color:black;
+    }
+  
+h1 {
+    color: rgb(222,219,214);
+    background-color: rgb(84,64,55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 74px;
+    text-align: center
+  }
+
+
+h2 {
+    color: rgb(84,64,55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center
+  }
+
+h3 {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+    text-align: center;
+}
+
+
+/* positions of main div and 2 images */
+.main_box,.img1,.img2{ 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+    z-index: 1;
+} 
+
+.main_box{ 
+	
+	margin-top: 3.5%; 
+	margin-bottom: 0; 
+} 
+
+.img1{ 
+	background-image: url(../img/7_elrinconcito.jpeg); 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+} 
+
+.img2{ 
+	background-image: URL(../img/7_elrinconcito-2.jpeg); 
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	left: 50%; 
+	background-attachment: fixed; 
+	border-left: solid white 5px; 
+}

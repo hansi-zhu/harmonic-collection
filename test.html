@@ -1,44 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>IMMORTALIZATING PLACE</title>
-        <link href="styles/test.css"
-        rel="stylesheet">
-        <style>
-            body {
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-            }
-            .top {
-                margin-left: 0px; /* Same as the width of the sidebar */
-                padding: 0px 0px;
-                top: 0;
-                left: 0;
-                }
-            .content{
-                margin-top: 0px;
-                margin-left: 0px; /* Same as the width of the sidebar */
-                padding: 0px 0px;
-                top: 0;
-                left: 0;
-                height:100%;
-            }
-            #theme:hover{
-            cursor: pointer; 
-            }
-        </style>
-  </head>
-  <body>
-    <div onclick="settheme(theme)">
-        <div id="theme">
-            click
-        </div>
-    </div>   
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="styles/test.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<h1 id="message">
+                Some prominent plays in view at the Phoenix Theater...				
+                </h1>
+				<img id="myImage" src="img/1_phoenix-1.jpeg">
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	<div class="button">
+		<button class="btn btn-warning" onclick=before();>
+			Before
+		</button>
+		<button class="btn btn-success" onclick=afterr();>
+			After
+		</button>
+	</div>
     <script src="js/test.js"></script>
-
-
 </body>
 </html>
-
-  </body>
