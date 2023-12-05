@@ -3,82 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layered Hamburger</title>
+    <title>6BC Botanical Garden</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
             overflow: hidden;
         }
 
-        #hamburger {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background-color: #e07a5f; /* Bread color */
-            margin: 50px auto;
-        }
-
-        .layer {
+        .draggable-div {
+            width: 140px;
+            height: 140px;
             position: absolute;
-            width: 80px;
-            height: 20px;
-            background-color: #3d405b; /* Layer color */
-            left: 10px;
-            transition: transform 0.5s ease;
+            cursor: grab;
+            border-radius: 20px;
         }
 
-        #layer-1 {
-            top: 10px;
+        .green {
+            background-color: #2ecc71;
         }
+        .floral1 { background-color: #f44f97; }
+        .floral2 { background-color: rgb(248, 98, 248); }
+        .floral3 { background-color: #ffb7c3; }
+        .floral4 { background-color: rgb(179, 75, 179); }
+        .floral5 { background-color: rgb(255, 80, 80); }
+        .floral6 { background-color: #f9dbae; }
+        .floral7 { background-color: #fff0b2; }
+        .floral8 { background-color: #f6f0aa; }
+        .floral9 { background-color: #c6edb2; }
+        .floral10 { background-color: #d5f6e3; }
+        .floral11 {background-color: rgb(201, 255, 201);}
 
-        #layer-2 {
-            top: 30px;
-            transform: translateY(0);
-        }
-
-        #layer-3 {
-            top: 50px;
-            transform: translateY(0);
-        }
-
-        #layer-4 {
-            top: 70px;
-            transform: translateY(0);
-        }
-
-        #button {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            padding: 10px;
-            background-color: #3d405b;
-            color: #f4f1de;
-            border: none;
-            cursor: pointer;
+        .palette{
+            border: solid 3px black;
+            background-color: white;
+            border-radius: 25px;
+            right:0;
         }
     </style>
 </head>
 <body>
+<div class="palette">
 
-    <div id="hamburger">
-        <div id="layer-1" class="layer"></div>
-        <div id="layer-2" class="layer"></div>
-        <div id="layer-3" class="layer"></div>
-        <div id="layer-4" class="layer"></div>
-    </div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
+    <div class="draggable-div green" style="top: 10px; left: 10px;"></div>
 
-    <button id="button" onclick="addLayer()">Add Layer</button>
+
+    <div class="draggable-div floral1" style="top: 10px; left: 160px;"></div>
+    <div class="draggable-div floral1" style="top: 10px; left: 160px;"></div>
+    <div class="draggable-div floral1" style="top: 10px; left: 160px;"></div>
+    <div class="draggable-div floral1" style="top: 10px; left: 160px;"></div>
+    <div class="draggable-div floral1" style="top: 10px; left: 160px;"></div>
+    <div class="draggable-div floral1" style="top: 10px; left: 160px;"></div>
+
+    <div class="draggable-div floral2" style="top: 10px; left: 310px;"></div>
+    <div class="draggable-div floral2" style="top: 10px; left: 310px;"></div>
+    <div class="draggable-div floral2" style="top: 10px; left: 310px;"></div>
+    <div class="draggable-div floral2" style="top: 10px; left: 310px;"></div>
+    <div class="draggable-div floral2" style="top: 10px; left: 310px;"></div>
+
+    <div class="draggable-div floral3" style="top: 160px; left: 10px;"></div>
+    <div class="draggable-div floral3" style="top: 160px; left: 10px;"></div>
+    <div class="draggable-div floral3" style="top: 160px; left: 10px;"></div>
+    <div class="draggable-div floral3" style="top: 160px; left: 10px;"></div>
+    <div class="draggable-div floral3" style="top: 160px; left: 10px;"></div>
+    <div class="draggable-div floral3" style="top: 160px; left: 10px;"></div>
+
+    <div class="draggable-div floral4" style="top: 160px; left: 160px;"></div>
+    <div class="draggable-div floral4" style="top: 160px; left: 160px;"></div>
+    <div class="draggable-div floral4" style="top: 160px; left: 160px;"></div>
+    <div class="draggable-div floral4" style="top: 160px; left: 160px;"></div>
+    <div class="draggable-div floral4" style="top: 160px; left: 160px;"></div>
+    <div class="draggable-div floral4" style="top: 160px; left: 160px;"></div>
+
+    <div class="draggable-div floral5" style="top: 160px; left: 310px;"></div>
+    <div class="draggable-div floral5" style="top: 160px; left: 310px;"></div>
+    <div class="draggable-div floral5" style="top: 160px; left: 310px;"></div>
+    <div class="draggable-div floral5" style="top: 160px; left: 310px;"></div>
+    <div class="draggable-div floral5" style="top: 160px; left: 310px;"></div>
+    <div class="draggable-div floral5" style="top: 160px; left: 310px;"></div>
+
+    <div class="draggable-div floral6" style="top: 310px; left: 10px;"></div>
+    <div class="draggable-div floral6" style="top: 310px; left: 10px;"></div>
+    <div class="draggable-div floral6" style="top: 310px; left: 10px;"></div>
+    <div class="draggable-div floral6" style="top: 310px; left: 10px;"></div>
+    <div class="draggable-div floral6" style="top: 310px; left: 10px;"></div>
+    <div class="draggable-div floral6" style="top: 310px; left: 10px;"></div>
+
+    <div class="draggable-div floral7" style="top: 310px; left: 160px;"></div>
+    <div class="draggable-div floral7" style="top: 310px; left: 160px;"></div>
+    <div class="draggable-div floral7" style="top: 310px; left: 160px;"></div>
+    <div class="draggable-div floral7" style="top: 310px; left: 160px;"></div>
+    <div class="draggable-div floral7" style="top: 310px; left: 160px;"></div>
+    <div class="draggable-div floral7" style="top: 310px; left: 160px;"></div>
+
+    <div class="draggable-div floral8" style="top: 310px; left: 310px;"></div>
+    <div class="draggable-div floral8" style="top: 310px; left: 310px;"></div>
+    <div class="draggable-div floral8" style="top: 310px; left: 310px;"></div>
+    <div class="draggable-div floral8" style="top: 310px; left: 310px;"></div>
+    <div class="draggable-div floral8" style="top: 310px; left: 310px;"></div>
+    <div class="draggable-div floral8" style="top: 310px; left: 310px;"></div>
+
+    <div class="draggable-div floral9" style="top: 460px; left: 10px;"></div>
+    <div class="draggable-div floral9" style="top: 460px; left: 10px;"></div>
+    <div class="draggable-div floral9" style="top: 460px; left: 10px;"></div>
+    <div class="draggable-div floral9" style="top: 460px; left: 10px;"></div>
+    <div class="draggable-div floral9" style="top: 460px; left: 10px;"></div>
+    <div class="draggable-div floral9" style="top: 460px; left: 10px;"></div>
+
+    <div class="draggable-div floral10" style="top: 460px; left: 160px;"></div>
+    <div class="draggable-div floral10" style="top: 460px; left: 160px;"></div>
+    <div class="draggable-div floral10" style="top: 460px; left: 160px;"></div>
+    <div class="draggable-div floral10" style="top: 460px; left: 160px;"></div>
+    <div class="draggable-div floral10" style="top: 460px; left: 160px;"></div>
+    <div class="draggable-div floral10" style="top: 460px; left: 160px;"></div>
+
+    <div class="draggable-div floral11" style="top: 460px; left: 310px;"></div>
+    <div class="draggable-div floral11" style="top: 460px; left: 310px;"></div>
+    <div class="draggable-div floral11" style="top: 460px; left: 310px;"></div>
+    <div class="draggable-div floral11" style="top: 460px; left: 310px;"></div>
+    <div class="draggable-div floral11" style="top: 460px; left: 310px;"></div>
+    <div class="draggable-div floral11" style="top: 460px; left: 310px;"></div>
+
+</div>
 
     <script>
-        let currentLayer = 1;
+        function makeDraggable(element) {
+            let offsetX, offsetY, isDragging = false;
 
-        function addLayer() {
-            if (currentLayer < 4) {
-                currentLayer++;
-                document.getElementById(`layer-${currentLayer}`).style.transform = 'translateY(0)';
-            }
+            element.addEventListener('mousedown', (event) => {
+                isDragging = true;
+                offsetX = event.clientX - element.getBoundingClientRect().left;
+                offsetY = event.clientY - element.getBoundingClientRect().top;
+                element.style.cursor = 'grabbing';
+            });
+
+            document.addEventListener('mousemove', (event) => {
+                if (isDragging) {
+                    const x = event.clientX - offsetX;
+                    const y = event.clientY - offsetY;
+
+                    element.style.left = `${x}px`;
+                    element.style.top = `${y}px`;
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+                element.style.cursor = 'grab';
+            });
         }
+
+        const draggableDivs = document.querySelectorAll('.draggable-div');
+        draggableDivs.forEach(makeDraggable);
     </script>
 
 </body>
