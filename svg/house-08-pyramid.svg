@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="houses" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309.7 192.59">
+  <defs>
+    <style>
+      .cls-1f {
+        fill: none;
+        stroke: #7a7a77;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2f {
+        fill: #7a7a77;
+      }
+
+      .cls-2f, .cls-3f, .cls-4f, .cls-5f, .cls-6f {
+        stroke-width: 0px;
+      }
+
+      .cls-3f {
+        fill: #163c8b;
+      }
+
+      .cls-4f {
+        fill: #aa4a44;
+      }
+
+      .cls-5f {
+        fill: #333;
+      }
+
+      .cls-6f {
+        fill: #eacd22;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4f" x="41.34" y="55.59" width="227.03" height="138.72"/>
+  <rect class="cls-5f" x="41.34" y="32.44" width="227.03" height="23.15"/>
+  <polygon class="cls-5f" points="21.14 32.44 41.34 32.44 41.34 55.59 21.14 32.44"/>
+  <polygon class="cls-5f" points="288.57 32.44 268.37 32.44 268.37 55.59 288.57 32.44"/>
+  <rect class="cls-5f" x="56.17" y="87.26" width="50.5" height="107.05"/>
+  <path class="cls-5f" d="m56.17,87.26c.37-.61,9.25-14.57,25.86-14.23,15.83.33,24.1,13.34,24.64,14.23"/>
+  <rect class="cls-5f" x="106.68" y="87.26" width="50.5" height="107.05"/>
+  <path class="cls-5f" d="m106.68,87.26c.37-.61,9.25-14.57,25.86-14.23,15.83.33,24.1,13.34,24.64,14.23"/>
+  <rect class="cls-5f" x="157.18" y="87.26" width="50.5" height="107.05"/>
+  <path class="cls-5f" d="m157.18,87.26c.37-.61,9.25-14.57,25.86-14.23,15.83.33,24.1,13.34,24.64,14.23"/>
+  <rect class="cls-5f" x="207.68" y="87.26" width="50.5" height="107.05"/>
+  <path class="cls-5f" d="m207.68,87.26c.37-.61,9.25-14.57,25.86-14.23,15.83.33,24.1,13.34,24.64,14.23"/>
+  <rect class="cls-2f" x="157.18" y="113.37" width="50.5" height="79.22"/>
+  <rect class="cls-3f" x="162.91" y="83.02" width="38.83" height="30.35"/>
+  <polygon class="cls-6f" points="162.91 113.37 182.43 87.66 201.75 113.37 162.91 113.37"/>
+  <line class="cls-1f" x1="41.34" y1="62.3" x2="268.37" y2="62.3"/>
+</svg>

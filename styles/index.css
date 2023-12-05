@@ -1,4 +1,6 @@
-
+body {
+  background-color:rgb(242,177,163)
+}
 h1 {
     color: rgb(222,219,214);
     background-color: rgb(84,64,55);
@@ -9,14 +11,14 @@ h1 {
   h2 {
     color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 30px;
+  font-size: 2.2vw;
   text-align: center;
   line-height: 98%;
 }
 h3 {
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+  font-size: 1.4vw;
   text-align: center;
   line-height: 98%;
 }
@@ -121,56 +123,56 @@ img {
 }
 
 #three {
-  background-color:#9ee09e ;
+  background-color:#feb144 ;
 }
 #three:hover{
   background-color:rgb(208,247,128);
 }
 
 #four {
-  background-color:#eccaff;
+  background-color:#9ee09e;
 }
 #four:hover{
   background-color:rgb(208,247,128);
 }
 
 #five {
-  background-color:#feb144;
+  background-color:#eccaff;
 }
 #five:hover{
   background-color:rgb(208,247,128);
 }
 
 #six {
-  background-color:bisque;
+  background-color:#eccaff;
 }
 #six:hover{
   background-color:rgb(208,247,128);
 }
 
 #seven {
-  background-color:bisque;
+  background-color:#b7c9e2;
 }
 #seven:hover{
   background-color:rgb(208,247,128);
 }
 
 #eight {
-  background-color:bisque;
+  background-color:#9ee09e;
 }
 #eight:hover{
   background-color:rgb(208,247,128);
 }
 
 #nine {
-  background-color:bisque;
+  background-color:#f8d568;
 }
 #nine:hover{
   background-color:rgb(208,247,128);
 }
 
 #ten {
-  background-color:bisque;
+  background-color:#feb144;
 }
 #ten:hover{
   background-color:rgb(208,247,128);
@@ -269,4 +271,54 @@ a:hover {
 }
 a:active {
   color: rgb(222,219,214);
+}
+
+:root {
+  --back-color: #ffc5c5;
+  --primary-color: #000000;
+}
+body {
+  background-color: var(--back-color);
+  color: var(--primary-color);
+}
+.theme-switches {
+  display: grid;
+  position: fixed;
+  z-index: 1;
+  right:15%;
+  margin-right: 10%;
+  justify-content: top;
+  justify-items: top;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.switch {
+  border: 3px solid black;
+  border-radius: 12px;
+  height: 40px;
+  width: 40px;
+  margin: 0px;
+  cursor: pointer;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items:center;
+}
+
+#switch-1 {
+  border: 3px solid black;
+  background-color: gray;
+}
+#switch-1:hover{
+  border: 3px solid white;
+  background-color: rgb(208,247,128);
+}
+#switch-4 {
+  border: 3px solid black;
+  background-color: white;
+}
+#switch-4:hover{
+  border: 3px solid white;
+  background-color: rgb(208,247,128);
 }

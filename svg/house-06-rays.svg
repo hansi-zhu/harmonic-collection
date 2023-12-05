@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="houses" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309.7 192.59">
+  <defs>
+    <style>
+      .cls-1d {
+        fill: #555;
+      }
+
+      .cls-1d, .cls-2d, .cls-3d, .cls-4d, .cls-5d, .cls-6d {
+        stroke-width: 0px;
+      }
+
+      .cls-2d {
+        fill: #6ccd9e;
+      }
+
+      .cls-3d {
+        fill: #cbc4bc;
+      }
+
+      .cls-4d {
+        fill: #e0e0e0;
+      }
+
+      .cls-5d {
+        fill: #d84b53;
+      }
+
+      .cls-6d {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3d" x="71.21" y="78.38" width="168.2" height="114.5"/>
+  <rect class="cls-2d" x="46.94" y="39.05" width="217.62" height="39.33"/>
+  <rect class="cls-5d" x="71.79" y="52.1" width="53.49" height="12.17" transform="translate(-8.52 17.78) rotate(-9.88)"/>
+  <rect class="cls-5d" x="118.31" y="54.28" width="69.7" height="12.17" transform="translate(-8.09 27.19) rotate(-9.88)"/>
+  <rect class="cls-5d" x="182" y="55.06" width="65.25" height="12.17" transform="translate(-7.31 37.75) rotate(-9.88)"/>
+  <rect class="cls-2d" x="79.54" y="148.36" width="151.89" height="44.52"/>
+  <rect class="cls-4d" x="79.36" y="78.38" width="152.07" height="69.98"/>
+  <rect class="cls-1d" x="71.21" y="78.38" width="168.2" height="9.28"/>
+  <rect class="cls-2d" x="121.7" y="109.03" width="24.76" height="42.74"/>
+  <rect class="cls-6d" x="84.47" y="109.03" width="33.27" height="36.43"/>
+  <rect class="cls-6d" x="152.44" y="109.03" width="72.11" height="36.36"/>
+  <rect class="cls-6d" x="84.47" y="91.56" width="140.08" height="13.7"/>
+</svg>
