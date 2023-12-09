@@ -6,40 +6,50 @@
   <link rel="stylesheet" href="styles/test-3.css"></rel>
   <style>
     *{
-        margin: 0px;
+    margin: 0px;
     padding: 0px;
     }
+    
     body {
       margin: 0;
       overflow: hidden;
     }
 
     .conveyor-belt {
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+    background-color: pink;
       display: flex;
       overflow: hidden;
+    }
+
+    .rectangular-div {
+        display:grid;
+      width: 100vw;
+      margin-right: 0px;
+      animation: conveyorAnimation 5s linear infinite;
+        grid-template-columns: 1fr 1fr;
     }
 
     .rectangular-div:nth-child(odd) {
       animation-delay: 2.5s; /* Delay odd divs to create a continuous flow */
     }
 
-    @keyframes conveyorAnimation 
-{
-0%   {right:0px;}
-100% {left: 1920px;}
-}
+    @keyframes conveyorAnimation {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 
     #r1{
-        background-color: green;
+        background-color: pink;
     }
     #r2{
         background-color: pink;
-    }
-    #r3{
-        background-color: red;
-    }
-    #r4{
-        background-color: purple;
     }
   </style>
   <title>Conveyor Belt Animation</title>
@@ -47,10 +57,14 @@
 <body>
 
   <div class="conveyor-belt">
-    <div class="rectangular-div" id="1"></div>
-    <div class="rectangular-div" id="2"></div>
-    <div class="rectangular-div" id="3"></div>
-    <div class="rectangular-div" id="4"></div>
+    <div class="rectangular-div" id="r1">
+        <div class="poster">hello</div>
+        <div class="poster">hello</div>
+    </div>
+    <div class="rectangular-div" id="r2">
+        <div class="poster">hello</div>
+        <div class="poster">hello</div>
+    </div>
   </div>
 
 </body>

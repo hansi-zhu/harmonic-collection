@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Div with Toggleable Audio</title>
+    <style>
+        /* Style the clickable div */
+        #clickableDiv {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+
+        /* Style for the audio controls (hidden initially) */
+        #audioPlayer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Clickable div -->
+<div id="clickableDiv">
+    <img src="img/4_cherrybomb.jpeg">
+</div>
+
+<!-- Audio player -->
+<audio id="audioPlayer" controls>
+    <source src="audio/cherrybomb.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- JavaScript to handle the click event and toggle play/pause -->
+<script>
+    // Get the clickable div and audio player elements
+    const clickableDiv = document.getElementById('clickableDiv');
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    // Add a click event listener to the div
+    clickableDiv.addEventListener('click', function () {
+        // Toggle between play and pause
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
+        }
+    });
+</script>
+
+</body>
+</html>

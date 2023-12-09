@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Divs with Different Audios</title>
+    <style>
+        body{
+            background-image: url("img/4_cbgb.jpeg");
+        }
+        .clickableDiv {
+            text-align: center;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .clickableDiv:hover{
+            transform: scale(1.1);
+        }
+
+        /* Style for the audio controls (hidden initially) */
+        .audioPlayer {
+            display: none;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid">
+<div class="clickableDiv" data-audio="audio/cherrybomb.mp3"><img src="img/4_cherrybomb.jpeg"></div>
+<div class="clickableDiv" data-audio="audio/blitzkriegbop.mp3"><img src="img/4_blitzkriegbop.jpeg"></div>
+<div class="clickableDiv" data-audio="audio/blankgeneration.mp3"><img src="img/4_blankgeneration.jpeg"></div>
+<div class="clickableDiv" data-audio="audio/burningdownthehouse.mp3"><img src="img/4_burning.jpeg"></div>
+<div class="clickableDiv" data-audio="audio/callme.mp3"><img src="img/4_callme.jpeg"></div>
+<div class="clickableDiv" data-audio="audio/gloriainexcelsisdeo.mp3"><img src="img/4_gloria.jpeg"></div>
+<div class="clickableDiv" data-audio="audio/guidinglight.mp3"><img src="img/4_guidinglight.jpeg"></div>
+
+</div>
+<!-- Audio players -->
+<audio class="audioPlayer" controls>
+    <source src="" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- JavaScript to handle the click event and toggle play/pause -->
+<script>
+    // Get the clickable divs and the audio player element
+    const clickableDivs = document.querySelectorAll('.clickableDiv');
+    const audioPlayer = document.querySelector('.audioPlayer');
+
+    // Add click event listeners to each div
+    clickableDivs.forEach(function (div) {
+        div.addEventListener('click', function () {
+            // Get the audio file associated with the clicked div
+            const audioFile = div.getAttribute('data-audio');
+
+            // Toggle between play and pause
+            if (audioPlayer.src !== audioFile) {
+                // If the clicked div is associated with a different audio file, set the new source and play
+                audioPlayer.src = audioFile;
+                audioPlayer.play();
+            } else if (audioPlayer.paused) {
+                // If the clicked div is associated with the current audio file and is paused, play
+                audioPlayer.play();
+            } else {
+                // If the clicked div is associated with the current audio file and is playing, pause
+                audioPlayer.pause();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
